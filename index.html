@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Radar semanal de IA e Vibe Coding, de 18 a 24 de agosto de 2026.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E%F0%9F%93%A1%3C/text%3E%3C/svg%3E">
+  <title>Radar da Semana: IA e Vibe Coding, 18 a 24 de agosto de 2026</title>
+<style>
+:root{
+  --bg:#f7f6f3;
+  --surface:#ffffff;
+  --bg-secondary:#f7f6f3;
+  --hover:#f1f1ef;
+  --text:#2f3437;
+  --text-secondary:#787774;
+  --border:#e9e9e7;
+  --border-focus:#cfcfcd;
+  --success:#0f7b6c;
+  --success-bg:#e8f5f2;
+  --success-border:#b8e0d8;
+  --warning:#9a6700;
+  --warning-bg:#fff8e6;
+  --warning-border:#f0e0a8;
+  --error:#c4554d;
+  --error-bg:#fdeceb;
+  --error-border:#f0c4c1;
+  --radius:7px;
+  --radius-sm:4px;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --font-mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+  --focus-ring:2px solid rgba(47,52,55,0.15);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#1a1b1c;--surface:#2a2b2c;--bg-secondary:#1a1b1c;--hover:#333436;
+    --text:#e8e7e4;--text-secondary:#96938c;--border:#3a3b3c;--border-focus:#55565a;
+    --success:#4fbfa8;--success-bg:#1b2e2a;--success-border:#2c4a43;
+    --warning:#e0b34d;--warning-bg:#2e2717;--warning-border:#4a3f22;
+    --error:#e8837c;--error-bg:#2e1e1d;--error-border:#4a2c29;
+  }
+}
+:root[data-theme="dark"]{--bg:#1a1b1c;--surface:#2a2b2c;--bg-secondary:#1a1b1c;--hover:#333436;--text:#e8e7e4;--text-secondary:#96938c;--border:#3a3b3c;--border-focus:#55565a;--success:#4fbfa8;--success-bg:#1b2e2a;--success-border:#2c4a43;--warning:#e0b34d;--warning-bg:#2e2717;--warning-border:#4a3f22;--error:#e8837c;--error-bg:#2e1e1d;--error-border:#4a2c29;}
+:root[data-theme="light"]{--bg:#f7f6f3;--surface:#ffffff;--bg-secondary:#f7f6f3;--hover:#f1f1ef;--text:#2f3437;--text-secondary:#787774;--border:#e9e9e7;--border-focus:#cfcfcd;--success:#0f7b6c;--success-bg:#e8f5f2;--success-border:#b8e0d8;--warning:#9a6700;--warning-bg:#fff8e6;--warning-border:#f0e0a8;--error:#c4554d;--error-bg:#fdeceb;--error-border:#f0c4c1;}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:13.5px;line-height:1.45;-webkit-font-smoothing:antialiased;}
+.page{padding:48px 16px;}
+.sheet{max-width:720px;margin:0 auto;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:40px 44px 32px;}
+a{color:inherit;}
+a:focus-visible{outline:var(--focus-ring);outline-offset:1px;border-radius:2px;}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:var(--text-secondary);margin:0 0 14px;}
+h1{font-size:28px;font-weight:600;letter-spacing:-0.02em;line-height:1.25;text-wrap:balance;margin:0 0 10px;}
+.lede{font-size:13.5px;color:var(--text-secondary);max-width:56ch;margin:0 0 20px;}
+.status-block{display:flex;align-items:flex-start;gap:10px;background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:10px 12px;}
+.dot{width:8px;height:8px;border-radius:50%;margin-top:5px;flex-shrink:0;}.dot-success{background:var(--success);}
+.status-title{font-size:13px;font-weight:500;margin:0;}.status-meta{font-size:12px;color:var(--text-secondary);margin:2px 0 0;}
+section{margin-top:48px;}.section-label{font-size:12px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:var(--text-secondary);margin:0 0 6px;}.section-title{font-size:17px;font-weight:600;letter-spacing:-0.01em;margin:0 0 6px;}.section-desc{font-size:13.5px;color:var(--text-secondary);max-width:58ch;margin:0 0 20px;}
+.item-list{border-top:1px solid var(--border);}.item{padding:20px 0;border-bottom:1px solid var(--border);}.item-top{display:flex;align-items:center;gap:8px;margin-bottom:8px;}.index{font-family:var(--font-mono);font-size:11.5px;color:var(--text-secondary);font-variant-numeric:tabular-nums;}.badge{font-size:10px;font-weight:500;color:var(--text-secondary);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1px 6px;white-space:nowrap;}.badge-warning{color:var(--warning);background:var(--warning-bg);border-color:var(--warning-border);}
+.item h3{font-size:14px;font-weight:600;letter-spacing:-0.005em;margin:0 0 3px;}.meta{font-size:12px;color:var(--text-secondary);margin:0 0 10px;}.item .body{margin:0 0 12px;}.item .body:last-of-type{margin-bottom:0;}
+.panel{display:flex;gap:8px;background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:10px 12px;margin:12px 0;}.panel.panel-warning{background:var(--warning-bg);border-color:var(--warning-border);}.panel svg{flex-shrink:0;margin-top:2px;color:var(--text-secondary);}.panel.panel-warning svg{color:var(--warning);}.panel-body{margin:0;}.panel-label{font-size:12px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:var(--text-secondary);margin:0 0 3px;}.panel.panel-warning .panel-label{color:var(--warning);}.panel p{margin:0;font-size:13.5px;}
+.sources-label{font-size:12px;font-weight:500;color:var(--text-secondary);margin:14px 0 6px;}.sources{display:flex;flex-wrap:wrap;gap:6px;margin:0;}.chip{display:inline-flex;align-items:center;gap:3px;font-family:var(--font-mono);font-size:11.5px;color:var(--text-secondary);background:var(--bg-secondary);border:1px solid var(--border);padding:2px 6px;border-radius:var(--radius-sm);text-decoration:none;}.chip:hover{color:var(--text);background:var(--hover);}
+.info-grid,.video-list{display:flex;flex-direction:column;gap:10px;}.info-panel{background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;}.info-panel .badge{margin-bottom:8px;display:inline-block;}.info-panel h3{font-size:14px;font-weight:600;letter-spacing:-0.005em;margin:0 0 6px;}.info-panel p{font-size:13.5px;color:var(--text-secondary);margin:0;}
+.plain-list{border-top:1px solid var(--border);}.row{padding:12px 0;border-bottom:1px solid var(--border);}.row-title{font-size:13.5px;font-weight:500;margin:0 0 3px;}.row-desc{font-size:13.5px;color:var(--text-secondary);margin:0;}
+.foot{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);}.foot p{font-size:12px;color:var(--text-secondary);margin:0;}
+@media (max-width:560px){.sheet{padding:28px 20px 24px;}h1{font-size:23px;}}
+</style>
+</head>
+<body>
+<div class="page">
+<main class="sheet">
+  <header>
+    <p class="eyebrow">Radar semanal · IA &amp; Vibe Coding</p>
+    <h1>O que aconteceu de 18 a 24 de agosto de 2026</h1>
+    <p class="lede">A semana trouxe mais evolução de agentes, integração com repositórios, teste de aplicações e controles de segurança do que novos modelos de fronteira. A pesquisa cobriu os principais laboratórios, ferramentas de programação assistida, MCP, disponibilidade, preços e qualidade do código gerado por IA.</p>
+    <div class="status-block">
+      <span class="dot dot-success" aria-hidden="true"></span>
+      <div>
+        <p class="status-title">Pesquisa concluída, com segunda verificação de lançamentos que poderiam ter ficado de fora</p>
+        <p class="status-meta">Janela: 18 a 24 de agosto de 2026 · 10 acontecimentos selecionados</p>
+      </div>
+    </div>
+  </header>
+
+  <section id="top10">
+    <p class="section-label">01 · Ranking</p>
+    <h2 class="section-title">Os 10 acontecimentos mais importantes da semana</h2>
+    <p class="section-desc">Ordenados por peso real na semana, não por volume de manchetes. Não houve lançamento oficial confirmado de um novo modelo de fronteira dentro da janela, então o ranking prioriza o que mudou a forma de construir, distribuir e proteger produtos com IA.</p>
+    <div class="item-list">
+
+      <article class="item">
+        <div class="item-top"><span class="index">01</span><span class="badge">Novo produto</span></div>
+        <h3>Grok Build chega à web e ao mobile</h3>
+        <p class="meta">SpaceXAI · 19 de agosto de 2026</p>
+        <p class="body">O Grok Build deixou o Early Beta limitado e passou a estar disponível em todos os planos, na web, no iOS e no Android. A pessoa descreve um app, jogo, site ou dashboard e recebe uma versão funcional dentro da conversa, com publicação em um endereço <code>grok.me</code>. A atualização também adiciona remix, domínio próprio, exportação para GitHub, segredos, conectores e acesso opcional às APIs da SpaceXAI dentro do app criado.</p>
+        <div class="panel"><div><p class="panel-label">Por que importa</p><p>A disputa saiu do chatbot e foi para a última milha do produto: construir, publicar e compartilhar. Para quem faz vibe coding, é um caso forte para testar se o caminho prompt para aplicação publicada reduz trabalho ou apenas desloca a complexidade para integrações e manutenção.</p></div></div>
+        <p class="sources-label">Fontes</p><p class="sources"><a class="chip" href="https://x.ai/news/grok-build-for-everyone" target="_blank" rel="noopener">SpaceXAI</a></p>
+      </article>
+
+      <article class="item">
+        <div class="item-top"><span class="index">02</span><span class="badge">Agentes e repositórios</span></div>
+        <h3>GitLab chega ao Codex Cloud</h3>
+        <p class="meta">OpenAI · 19 de agosto de 2026</p>
+        <p class="body">O suporte entrou em beta em todos os planos do ChatGPT. É possível conectar um projeto GitLab ao Codex Cloud, criar um ambiente, iniciar tarefas a partir de issues ou merge requests com <code>@codex</code> e solicitar revisões pontuais ou automáticas de merge requests. Instâncias Self-Managed e Dedicated exigem configuração do administrador e webhooks, e o GitLab precisa estar na versão 19.0 ou superior.</p>
+        <div class="panel"><div><p class="panel-label">Por que importa</p><p>O agente passa a ser acionado pelo fluxo de trabalho do repositório, não apenas por uma conversa solta. Isso aproxima o vibe coding de um processo repetível de engenharia, com contexto, revisão e limites de permissão que podem ser demonstrados em vídeo.</p></div></div>
+        <p class="sources-label">Fontes</p><p class="sources"><a class="chip" href="https://openai.com/products/release-notes/" target="_blank" rel="noopener">Notas da OpenAI</a></p>
+      </article>
+
+      <article class="item">
+        <div class="item-top"><span class="index">03</span><span class="badge">Atualização de ferramenta</span></div>
+        <h3>Codex CLI 0.149.0 ganha painel de agentes e novos controles</h3>
+        <p class="meta">OpenAI · 20 de agosto de 2026</p>
+        <p class="body">A versão adiciona o painel interativo <code>codex agents</code> para buscar, abrir, renomear e parar tarefas, além de <code>/cd</code>, <code>/pwd</code>, <code>/cwd</code>, <code>codex queue</code> e diagnósticos mais amplos no <code>codex doctor</code>. Também melhora a restauração do perfil de permissão ao retomar ou bifurcar threads, documenta riscos de exfiltração por DNS em devcontainers seguros e amplia políticas para comandos, MCP e ambientes.</p>
+        <div class="panel"><div><p class="panel-label">Por que importa</p><p>É a transformação do CLI em uma central de operações de agentes, com filas, sessões e diagnóstico. A parte mais importante para builders não é o painel em si, mas a direção: mais autonomia exige que permissões, rede, memória de sessão e recuperação sejam tratados como produto.</p></div></div>
+        <p class="sources-label">Fontes</p><p class="sources"><a class="chip" href="https://github.com/openai/codex/releases/tag/rust-v0.149.0" target="_blank" rel="noopener">GitHub oficial</a></p>
+      </article>
+
+      <article class="item">
+        <div class="item-top"><span class="index">04</span><span class="badge">Atualização de ferramenta</span></div>
+        <h3>Claude Code 2.1.239 fecha lacunas de custo, MCP e confiabilidade</h3>
+        <p class="meta">Anthropic · 21 de agosto de 2026</p>
+        <p class="body">A versão faz as estimativas de <code>/cost</code>, da barra de status e de <code>--max-budget-usd</code> incluírem o adicional de 1,1x de inferência somente nos EUA em workspaces com residência de dados. Também adiciona <code>/claude-api upgrade</code>, corrige formulários de elicitação MCP que eram cortados no terminal e resolve uma condição de corrida em que uma mensagem enfileirada podia deixar o turno ocioso e repetir ações. A release ainda corrige uma situação de proxy que podia duplicar chamadas cobradas no Bedrock.</p>
+        <div class="panel"><div><p class="panel-label">Por que importa</p><p>É uma atualização operacional, não um novo modelo. Para quem constrói com agentes, custo real, aprovação, reconnect de MCP e prevenção de reexecução são parte da qualidade do produto, especialmente em tarefas longas e automatizadas.</p></div></div>
+        <p class="sources-label">Fontes</p><p class="sources"><a class="chip" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.239" target="_blank" rel="noopener">GitHub oficial</a></p>
+      </article>
+
+      <article class="item">
+        <div class="item-top"><span class="index">05</span><span class="badge">Verificação de software</span></div>
+        <h3>Cobalt conecta o agente a um navegador real para testar o app</h3>
+        <p class="meta">Cobalt · 21 de agosto de 2026</p>
+        <p class="body">O Agent Browser permite que um coding agent use um navegador contra a aplicação em Preview: navegar, clicar, preencher campos, usar teclado, capturar telas e ler diagnósticos do navegador. A sessão fica ligada ao mesmo computador, repositório, serviços e tarefa em que o código foi criado. A visualização começa em modo somente leitura, e a pessoa pode assumir o controle explicitamente quando precisar.</p>
+        <div class="panel"><div><p class="panel-label">Por que importa</p><p>Isso materializa a última milha que costuma faltar no discurso de vibe coding: não basta gerar o código, é preciso observar o comportamento. O recurso cria uma pauta demonstrável sobre testes de fluxo, layout responsivo, console, rede e evidência visual antes de abrir um pull request.</p></div></div>
+        <p class="sources-label">Fontes</p><p class="sources"><a class="chip" href="https://cobaltcode.ai/blog/agent-browser" target="_blank" rel="noopener">Blog da Cobalt</a></p>
+      </article>
+
+      <article class="item">
+        <div class="item-top"><span class="index">06</span><span class="badge badge-warning">Segurança</span></div>
+        <h3>CoSnitch, uma falha de execução silenciosa no Microsoft Copilot</h3>
+        <p class="meta">Varonis Threat Labs e Microsoft · 18 de agosto de 2026</p>
+        <p class="body">A Varonis divulgou a cadeia CVE-2026-24301, em que uma URL preparada podia combinar parâmetros de consulta e execução automática para disparar um prompt sem gesto do usuário. O agente poderia consultar conectores, enviar dados para um servidor externo e contaminar a memória persistente. A Varonis informa que comunicou o problema à Microsoft em dezembro de 2025, que os patches foram enviados em 18 de agosto de 2026 e que não há evidência de exploração em produção.</p>
+        <div class="panel panel-warning"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg><div><p class="panel-label">Por que importa</p><p>O problema não é apenas um prompt malicioso. É a combinação de URL, sessão autenticada, conectores e memória persistente. Quem cria agentes precisa tratar qualquer texto externo como dado não confiável e exigir autorização explícita no ponto em que uma ação tem efeito.</p></div></div>
+        <p class="sources-label">Fontes</p><p class="sources"><a class="chip" href="https://www.varonis.com/blog/cosnitch" target="_blank" rel="noopener">Varonis Threat Labs</a><a class="chip" href="https://arstechnica.com/security/2026/08/microsoft-copilot-reveals-secret-input-that-allowed-it-to-be-hacked/" target="_blank" rel="noopener">Ars Technica</a></p>
+      </article>
+
+      <article class="item">
+        <div class="item-top"><span class="index">07</span><span class="badge badge-warning">Segurança</span></div>
+        <h3>OpenAI desacelera temporariamente o treinamento de fronteira para reforçar segurança cibernética</h3>
+        <p class="meta">OpenAI · 18 de agosto de 2026</p>
+        <p class="body">A OpenAI informou que evidências preliminares indicam que o modelo futuro Astra pode atingir o nível Critical de capacidade cibernética em seu Preparedness Framework. Em resposta, pausou por duas semanas o reinforcement learning dos modelos mais recentes destinados a implantação e manteve o maior treinamento de fronteira em espera. A empresa descreveu isolamento mais forte de workloads, isolamento de rede, testes contínuos e monitoramento automatizado de atividade e uso de ferramentas.</p>
+        <div class="panel panel-warning"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg><div><p class="panel-label">Por que importa</p><p>Não é um lançamento do Astra, e sim uma mudança de processo diante de modelos que podem operar com código e ferramentas. A mensagem para builders é clara: sandbox, rede, logs, revisão humana e testes de abuso precisam acompanhar o aumento de capacidade.</p></div></div>
+        <p class="sources-label">Fontes</p><p class="sources"><a class="chip" href="https://openai.com/index/pacing-model-development-cyber-capabilities/" target="_blank" rel="noopener">OpenAI</a></p>
+      </article>
+
+      <article class="item">
+        <div class="item-top"><span class="index">08</span><span class="badge">Privacidade e disponibilidade</span></div>
+        <h3>Zero Data Retention ganha o Private Safety Processing</h3>
+        <p class="meta">OpenAI · 19 de agosto de 2026</p>
+        <p class="body">A OpenAI começou a oferecer, para clientes elegíveis de API, a promessa de que prompts e respostas não ficam retidos depois do processamento, sem uso dos dados empresariais para treinamento salvo opt-in. Em prévia, o Private Safety Processing tenta detectar padrões de risco entre interações relacionadas sem dar à equipe da OpenAI acesso ao conteúdo subjacente. Em implantações com ZDR, o conteúdo permanece na infraestrutura controlada pelo cliente, e a empresa promete compartilhar detalhes técnicos em setembro.</p>
+        <div class="panel"><div><p class="panel-label">Por que importa</p><p>Privacidade e segurança deixam de ser um detalhe de plano e viram argumento de adoção para produtos com dados financeiros, de saúde ou proprietários. Para empreendedores digitais, isso abre uma conversa mais concreta entre custo, retenção, compliance e confiança do cliente.</p></div></div>
+        <p class="sources-label">Fontes</p><p class="sources"><a class="chip" href="https://openai.com/index/offering-zero-data-retention-for-frontier-models/" target="_blank" rel="noopener">OpenAI</a></p>
+      </article>
+
+      <article class="item">
+        <div class="item-top"><span class="index">09</span><span class="badge">Negócios e disponibilidade</span></div>
+        <h3>ChatGPT Ads chega a 31 mercados europeus</h3>
+        <p class="meta">OpenAI · 18 de agosto de 2026</p>
+        <p class="body">A OpenAI anunciou a expansão do ChatGPT Ads para 31 países europeus a partir de 24 de agosto. Os anúncios aparecem somente nos planos Free e Go, enquanto Plus, Pro e Enterprise permanecem sem anúncios. A plataforma adicionou otimização para conversão, geotargeting, audiências personalizadas, OpenAI Pixel, Conversions API e integrações de medição de terceiros.</p>
+        <div class="panel"><div><p class="panel-label">Por que importa</p><p>O ChatGPT está se tornando um novo ponto de descoberta e comparação de produtos, não apenas uma ferramenta de produtividade. Para quem vende curso, serviço ou software, a pergunta passa a ser como medir presença e conversão dentro de respostas e jornadas que começam com uma intenção mais detalhada do que uma busca tradicional.</p></div></div>
+        <p class="sources-label">Fontes</p><p class="sources"><a class="chip" href="https://openai.com/index/chatgpt-ads-expands-across-europe/" target="_blank" rel="noopener">OpenAI</a></p>
+      </article>
+
+      <article class="item">
+        <div class="item-top"><span class="index">10</span><span class="badge">Infraestrutura de IA</span></div>
+        <h3>Cerebras apresenta o CS-4 para inferência em escala de rack</h3>
+        <p class="meta">Cerebras · 18 de agosto de 2026</p>
+        <p class="body">O CS-4 combina três novos processadores WSE-3 Turbo em um sistema de rack. A empresa declara 750 PFLOPS, até duas vezes a velocidade do CS-3, até dez vezes mais throughput por watt e até trinta vezes mais tokens por segundo por usuário do que soluções baseadas em GPU no teste com GPT-OSS-120B. Os primeiros envios estão previstos para este trimestre; os números de desempenho são afirmações e benchmarks divulgados pela própria Cerebras.</p>
+        <div class="panel"><div><p class="panel-label">Por que importa</p><p>Inferência rápida é uma alavanca para agentes que precisam raciocinar, verificar e chamar ferramentas sem deixar a experiência lenta. Para o público do canal, a leitura útil não é comprar um rack, mas entender por que velocidade, energia e custo de execução podem mudar quais produtos agentivos são economicamente viáveis.</p></div></div>
+        <p class="sources-label">Fonte</p><p class="sources"><a class="chip" href="https://investors.cerebras.ai/news-releases/news-release-details/cerebras-unveils-cs-4-30-times-faster-gpu-based-solutions" target="_blank" rel="noopener">Cerebras</a></p>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="por-que-importa">
+    <p class="section-label">02 · Leitura estratégica</p>
+    <h2 class="section-title">Por que isso importa para o seu público</h2>
+    <p class="section-desc">A semana aponta para uma mudança de foco: o valor não está apenas em qual modelo escreve melhor, mas em como o sistema constrói, testa, distribui e controla o que foi criado.</p>
+    <div class="info-grid">
+      <div class="info-panel"><h3>Para criadores de conteúdo</h3><p>As melhores pautas são demonstrações com resultado visível: construir um app no Grok Build, transformar uma issue em merge request no Codex, ou pedir a um agente que teste uma aplicação no navegador. O diferencial editorial está em mostrar a última milha, com limites, manutenção e evidências, em vez de apenas repetir a promessa de que a IA faz tudo.</p></div>
+      <div class="info-panel"><h3>Para empreendedores digitais</h3><p>Há duas novas frentes de distribuição e operação. O ChatGPT Ads cria um canal de descoberta baseado em intenção, enquanto Grok Build e os agentes conectados a repositórios reduzem a distância entre ideia e produto publicado. A contrapartida é medir conversão, controlar credenciais e decidir quais dados podem entrar em cada fluxo.</p></div>
+      <div class="info-panel"><h3>Para quem constrói aplicações com IA</h3><p>Agentes estão ganhando acesso a repositórios, navegadores, conectores, memória e execução contínua. Isso torna permissões, sandbox, isolamento de rede, revisão de diff, testes de fluxo e prevenção de reexecução parte da arquitetura principal. A semana recompensa builders que projetam o controle junto com a automação.</p></div>
+    </div>
+  </section>
+
+  <section id="videos">
+    <p class="section-label">03 · Pauta</p>
+    <h2 class="section-title">3 assuntos com maior potencial de virar vídeo</h2>
+    <p class="section-desc">Selecionados por relevância direta para quem já usa ferramentas de vibe coding, com gancho, experimento e resultado visual.</p>
+    <div class="video-list">
+      <div class="info-panel"><span class="badge">Prioridade alta · transformação visível</span><h3>Grok Build: dá para publicar uma aplicação real pelo celular?</h3><p>O gancho é testar a promessa completa, do prompt ao link público, passando por domínio, exportação para GitHub, segredo e conector. A retenção vem de mostrar a aplicação funcionando e revelar em que ponto ainda é preciso assumir o controle.</p></div>
+      <div class="info-panel"><span class="badge">Prioridade alta · medo da última milha</span><h3>Seu agente escreve o código, mas consegue testar a aplicação?</h3><p>Use um fluxo comparável com Agent Browser: o agente navega, preenche um formulário, encontra um erro, lê console e rede, corrige e repete. O público vê a diferença entre gerar arquivos e validar comportamento, sem depender de uma promessa abstrata de produtividade.</p></div>
+      <div class="info-panel"><span class="badge">Prioridade alta · curiosidade operacional</span><h3>Codex Cloud com GitLab: a issue vira código, revisão e merge request?</h3><p>O formato acompanha uma tarefa real do começo ao fim, com conexão do repositório, ambiente, menção <code>@codex</code>, revisão automática e permissões. A limitação do beta e o cuidado com webhooks dão tensão prática ao experimento e evitam vender automação sem contexto.</p></div>
+    </div>
+  </section>
+
+  <section id="nao-selecionadas">
+    <p class="section-label">+ Conferência</p>
+    <h2 class="section-title">Notícias consideradas, mas não selecionadas</h2>
+    <p class="section-desc">Acontecimentos relevantes encontrados na rodada principal ou na segunda verificação, com o motivo objetivo de terem ficado fora do Top 10.</p>
+    <div class="plain-list">
+      <div class="row"><p class="row-title">ChatGPT para Adolescentes</p><p class="row-desc">Lançamento confirmado em 18 de agosto, com previsão de idade, proteções específicas, controles parentais e experiência voltada ao aprendizado. Ficou fora do Top 10 por ser mais educacional e de segurança de produto do que de construção de aplicações, mas merece acompanhamento.</p></div>
+      <div class="row"><p class="row-title">Cobalt, suporte a Grok, Gemini e múltiplos repositórios</p><p class="row-desc">Atualizações confirmadas entre 20 e 24 de agosto. São relevantes para o mesmo harness, mas incrementais; o Agent Browser entrou no Top 10 por representar uma mudança mais forte na verificação da última milha.</p></div>
+      <div class="row"><p class="row-title">Vercel fx 0.0.5</p><p class="row-desc">Novo release experimental de um coding agent nativo, aberto, pequeno e embutível, com login para assinaturas Codex e Grok, MCP e SDK WebAssembly. Ficou fora por ainda estar em estágio experimental e ter impacto menor que os fluxos oficiais de Codex, Claude Code e Grok Build.</p></div>
+      <div class="row"><p class="row-title">Grok Bot incluído em mais planos</p><p class="row-desc">Atualização confirmada em 21 de agosto para SuperGrok Plus, Cursor Pro+ e planos Cursor Teams. É uma expansão importante de disponibilidade de agentes, mas o ranking priorizou o lançamento do Grok Build e seu caminho direto para aplicações.</p></div>
+      <div class="row"><p class="row-title">Grok 4.6 no Amazon Bedrock</p><p class="row-desc">Disponibilidade confirmada em 19 de agosto, com janela de contexto de 500 mil tokens e preço divulgado pela SpaceXAI. O modelo em si foi lançado em 12 de agosto, fora da janela; por isso esta entrada foi tratada como atualização de disponibilidade, não como novo modelo.</p></div>
+      <div class="row"><p class="row-title">Gemini CLI 0.55.1 e a transição para Antigravity</p><p class="row-desc">A release estável encontrada foi publicada em 11 de agosto, e a transição de contas individuais do Gemini CLI para Antigravity ocorreu em 18 de junho. Não encontrei um novo lançamento estável confirmado dentro de 18 a 24 de agosto.</p></div>
+      <div class="row"><p class="row-title">Qwen3.8-Max, Grok 4.6 e outros modelos de fronteira</p><p class="row-desc">Foram considerados como contexto de mercado, mas os anúncios originais ocorreram antes da janela, em 3 e 12 de agosto. Não houve confirmação, nesta rodada, de novo modelo de fronteira lançado por DeepSeek, Qwen, Kimi, MiniMax ou Z.ai entre 18 e 24 de agosto.</p></div>
+      <div class="row"><p class="row-title">Conversas sobre a possível compra da Decart pela Anthropic</p><p class="row-desc">Assunto relevante, mas publicado antes da janela, em 13 de agosto, e ainda não confirmado como aquisição. Mantido fora do Top 10 para não transformar uma negociação reportada em fato consumado.</p></div>
+      <div class="row"><p class="row-title">Novidades de robótica e hardware físico da NVIDIA, LG e Orbbec</p><p class="row-desc">A segunda verificação encontrou lançamentos e anúncios entre 18 e 19 de agosto. O CS-4 entrou no Top 10 por impactar diretamente a economia de inferência para agentes; os demais ficaram fora por estarem mais distantes do núcleo de vibe coding do canal.</p></div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <p>Pesquisa realizada em 24 de agosto de 2026, com buscas dedicadas a lançamentos, modelos, atualizações, OpenAI, Anthropic, Google, xAI, Meta, Microsoft e laboratórios chineses, ferramentas de codificação assistida, agentes e MCP, preços e disponibilidade, segurança e qualidade de código. Depois da varredura por categoria, foi feita uma segunda verificação independente para lançamentos menores, hardware e produtos que poderiam ter ficado de fora. Datas e disponibilidade foram conferidas em fontes primárias sempre que possível.</p>
+  </footer>
+</main>
+</div>
+</body>
+</html>
